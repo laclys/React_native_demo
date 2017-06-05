@@ -19,6 +19,9 @@ import PropsTest from './PropsTest';
 import StateTest from './StateTest';
 import RefTest from './RefTest';
 
+import Student from './Student';
+import MingStu from './MingStu';
+
 export default class setup extends Component {
   constructor(props){
     super(props);
@@ -27,6 +30,8 @@ export default class setup extends Component {
       result:0,
       size:0,
     })
+    this.stu = new Student('小明','男',13);
+    this.ming = new MingStu();
   }
   render() {
     var view = this.state.remove?null:<LifecycleComponent/>
@@ -81,10 +86,12 @@ export default class setup extends Component {
                })
               }
             }
-          >获取Size大小{this.state.size}</Text>
+          >获取Size大小(点击){this.state.size}</Text>
           <RefTest
             ref="reftest"   
           />
+          <Text style={{fontSize:20}}>{this.stu.getDescription()}</Text>
+          <Text style={{fontSize:20}}>{this.ming.getDescription()}</Text>
       </View>
     );
   }

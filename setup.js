@@ -18,6 +18,7 @@ import EiComponent,{name,age,sum} from './EiComponent';
 import PropsTest from './PropsTest';
 import StateTest from './StateTest';
 import RefTest from './RefTest';
+import TouchableTest from './TouchableTest';
 
 import Student from './Student';
 import MingStu from './MingStu';
@@ -92,6 +93,7 @@ export default class setup extends Component {
           />
           <Text style={{fontSize:20}}>{this.stu.getDescription()}</Text>
           <Text style={{fontSize:20}}>{this.ming.getDescription()}</Text>
+          <TouchableTest/>
       </View>
     );
   }

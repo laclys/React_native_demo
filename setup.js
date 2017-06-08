@@ -19,6 +19,7 @@ import PropsTest from './PropsTest';
 import StateTest from './StateTest';
 import RefTest from './RefTest';
 import TouchableTest from './TouchableTest';
+import ImgTest from './ImgTest';
 
 import Student from './Student';
 import MingStu from './MingStu';
@@ -47,16 +48,16 @@ export default class setup extends Component {
       <View style={styles.container}>
         {/*<HelloComponent name="Lac"/>*/}
         {/*<LifecycleComponent/>*/}
-        <Text 
+        {/*<Text 
           style={{fontSize:20}}
           onPress={()=>{
             this.setState({
               remove:!this.state.remove
             })
           }}
-        >{text}</Text>
+        >{text}</Text>*/}
         {view}
-        <EiComponent/>
+        {/*<EiComponent/>
         <Text style={{fontSize:20}}>名字:{name}</Text>
         <Text style={{fontSize:20}}>年龄:{age}</Text>
         <Text style={{fontSize:20}}
@@ -66,17 +67,17 @@ export default class setup extends Component {
               result:result,
             })
           }}
-          >2+3={this.state.result}</Text>
-          <PropsTest
+          >2+3={this.state.result}</Text>*/}
+          {/*<PropsTest
             // name="Mac"
            // name={params.name}
            // age={params.age}
            // {...params}
            name={name}
            age={age}
-          />
-          <StateTest/>
-          <Text
+          />*/}
+          {/*<StateTest/>*/}
+          {/*<Text
             style={{fontSize:20}}
             onPress={
               ()=>{
@@ -93,7 +94,8 @@ export default class setup extends Component {
           />
           <Text style={{fontSize:20}}>{this.stu.getDescription()}</Text>
           <Text style={{fontSize:20}}>{this.ming.getDescription()}</Text>
-          <TouchableTest/>
+          <TouchableTest/>*/}
+          <ImgTest/>
       </View>
     );
   }
